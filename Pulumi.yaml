@@ -1,0 +1,10 @@
+name: Pulumi-Lab-8
+description: A TypeScript program to deploy a static website on AWS
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: https://github.com/pulumi/templates/tree/master/static-website-aws-typescript

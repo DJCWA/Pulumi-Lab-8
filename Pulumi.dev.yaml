@@ -1,0 +1,5 @@
+config:
+  Pulumi-Lab-8:errorDocument: error.html
+  Pulumi-Lab-8:indexDocument: index.html
+  Pulumi-Lab-8:path: ./www
+  aws:region: us-west-2
