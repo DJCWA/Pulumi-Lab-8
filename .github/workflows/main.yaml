@@ -20,14 +20,14 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        working-directory: ./
+        working-directory: ./www
         run: npm install
 
       - uses: pulumi/actions@v5
         with:
           command: destroy
           stack-name: DJCWA/Pulumi-Lab-8/dev
-          work-dir: ./
+          work-dir: ./www
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           # If you do not have Pulumi ESC configured then uncomment: `
